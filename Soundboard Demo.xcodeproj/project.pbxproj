@@ -12,6 +12,12 @@
 		F9BD802C2241DFE1002A862D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BD802A2241DFE1002A862D /* Main.storyboard */; };
 		F9BD802E2241DFE7002A862D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9BD802D2241DFE7002A862D /* Assets.xcassets */; };
 		F9BD80312241DFE7002A862D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BD802F2241DFE7002A862D /* LaunchScreen.storyboard */; };
+		F9BD803F2241E362002A862D /* yodalaughing.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9BD803B2241E361002A862D /* yodalaughing.wav */; };
+		F9BD80402241E362002A862D /* nerfherder.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9BD803C2241E361002A862D /* nerfherder.wav */; };
+		F9BD80412241E362002A862D /* laughfuzzball.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9BD803D2241E362002A862D /* laughfuzzball.wav */; };
+		F9BD80422241E362002A862D /* swvader01.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9BD803E2241E362002A862D /* swvader01.wav */; };
+		F9BD80452241E80A002A862D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BD80442241E80A002A862D /* AVFoundation.framework */; };
+		F9BD80482243040B002A862D /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9BD80472243040B002A862D /* Starjedi.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		F9BD802D2241DFE7002A862D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9BD80302241DFE7002A862D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9BD80322241DFE7002A862D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9BD803B2241E361002A862D /* yodalaughing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = yodalaughing.wav; sourceTree = "<group>"; };
+		F9BD803C2241E361002A862D /* nerfherder.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nerfherder.wav; sourceTree = "<group>"; };
+		F9BD803D2241E362002A862D /* laughfuzzball.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laughfuzzball.wav; sourceTree = "<group>"; };
+		F9BD803E2241E362002A862D /* swvader01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swvader01.wav; sourceTree = "<group>"; };
+		F9BD80442241E80A002A862D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F9BD80472243040B002A862D /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9BD80452241E80A002A862D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,7 @@
 			children = (
 				F9BD80252241DFE1002A862D /* Soundboard Demo */,
 				F9BD80242241DFE1002A862D /* Products */,
+				F9BD80432241E809002A862D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +68,8 @@
 		F9BD80252241DFE1002A862D /* Soundboard Demo */ = {
 			isa = PBXGroup;
 			children = (
+				F9BD8046224303E1002A862D /* Fonts */,
+				F9BD80382241E21A002A862D /* Sounds */,
 				F9BD80262241DFE1002A862D /* AppDelegate.swift */,
 				F9BD80282241DFE1002A862D /* ViewController.swift */,
 				F9BD802A2241DFE1002A862D /* Main.storyboard */,
@@ -62,6 +78,33 @@
 				F9BD80322241DFE7002A862D /* Info.plist */,
 			);
 			path = "Soundboard Demo";
+			sourceTree = "<group>";
+		};
+		F9BD80382241E21A002A862D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F9BD803D2241E362002A862D /* laughfuzzball.wav */,
+				F9BD803C2241E361002A862D /* nerfherder.wav */,
+				F9BD803E2241E362002A862D /* swvader01.wav */,
+				F9BD803B2241E361002A862D /* yodalaughing.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		F9BD80432241E809002A862D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9BD80442241E80A002A862D /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9BD8046224303E1002A862D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F9BD80472243040B002A862D /* Starjedi.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +165,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9BD80412241E362002A862D /* laughfuzzball.wav in Resources */,
+				F9BD803F2241E362002A862D /* yodalaughing.wav in Resources */,
+				F9BD80402241E362002A862D /* nerfherder.wav in Resources */,
 				F9BD80312241DFE7002A862D /* LaunchScreen.storyboard in Resources */,
 				F9BD802E2241DFE7002A862D /* Assets.xcassets in Resources */,
+				F9BD80422241E362002A862D /* swvader01.wav in Resources */,
+				F9BD80482243040B002A862D /* Starjedi.ttf in Resources */,
 				F9BD802C2241DFE1002A862D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
